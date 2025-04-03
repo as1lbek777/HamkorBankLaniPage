@@ -2,9 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './input.css'
 
-const Hamkorbank = () => {
-    return
-}
+
 
 const BankCards = [
     {
@@ -135,5 +133,7 @@ const BankCards = [
     },
 ]
 
+
+
 const root = ReactDOM.create(document.getElementById("root"));
-root.render(<Hamkorbank />);
+root.render();
