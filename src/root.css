@@ -1,0 +1,11 @@
+:root
+{
+    --background-color: #F0F2F5;
+    --universal-hover-color: #1CCA59;
+    --color: #FFFFFF;
+    --card-color: #D4E9EA;
+    --transitions: all 0.3 ease-in-out;
+    --br-radius: 15px;
+    --text-color: white;
+    --p-teg-color: #7C94BD;
+}
