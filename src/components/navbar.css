@@ -1,0 +1,149 @@
+.flex2
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.container
+{
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.navbar
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+hr
+{
+    color: var(--p-teg-color);
+}
+
+.logo
+{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--nav-teg-color);
+}
+
+.nav-links
+{
+    display: flex;
+    gap: 15px;
+    font-weight: 500;
+}
+
+.nav-links li
+{
+    position: relative;
+}
+
+.nav-links li::after
+{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -28px;
+    width: 100%;
+    height: 2px;
+    background-color: var(--universal-hover-color);
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-links li:hover::after
+{
+    transform: scaleX(1);
+}
+
+.nav-item
+{
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-item:hover
+{
+    color: var(--universal-hover-color);
+}
+
+.currency
+{
+    display: flex;
+    gap: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.flex
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.card
+{
+    width: 160px;
+    height: 45px;
+    background-color: var(--bg2-color);
+}
+
+.p1
+{
+    margin-top: 7px;
+    font-weight: 500;
+    position: relative;
+    font-size: 1rem;
+    color: var(--black-color);
+}
+
+.p1 .shop
+{
+    position: absolute;
+    top: -10px;
+    left: 15px;
+    color: var(--p-teg-color);
+    font-size: 8px;
+}
+
+.shop2
+{
+    color: var(--p-teg-color);
+    font-weight: 400;
+}
+
+.shop3
+{
+    position: absolute;
+    font-size: 8px;
+    top: -10px;
+    left: 0;
+    color: var(--p-teg-color);
+}
+
+.internet-bank
+{
+    border-radius: 12px;
+    padding: 10px 25px;
+    border: none;
+    background-color: var(--color);
+    cursor: pointer;
+    color: var(--black-color);
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.internet-bank:hover{
+    background-color: var(--universal-hover-color);
+    color: var(--text-color);
+}

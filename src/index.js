@@ -1,139 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './input.css'
+import './input.css';
+import Navbar from "./components/navbar";
+import BankCardLis from "./components/main";
+import BankCardList from "./components/section";
 
+const Hamkorbank = () => {
+    return (
+        <>
+            <Navbar />
+            <BankCardLis />
+            <BankCardList />
+        </>
+    )
+}
 
-
-const BankCards = [
-    {
-        ID: 1,
-        name: "Visa Classic",
-        type: "sayohat uchun",
-        currencies: ["USD", "EUR"],
-        price: "bepul",
-        description: "Karta dizayni",
-        features: "Komissiya yo\'q",
-        description2: "Hamkorbank terminallari orqali naqd pul yechib olish, o‘tkazish va to‘lovlarni amalga oshirish",
-        features2: 'Tez tarjimalar',
-        description3: "Biz uni bir daqiqa ichida yuboramiz",
-        image: "https://hamkorbank.uz/assets/images-cache/products/physical/visa-exchange/visa_preview.37fe5755.webP",
-        BtnCards: false,
-    },
-    {
-        ID: 2,
-        name: "HUMO",
-        type: "xarid qilish uchun",
-        currencies: "so\'m miqdorida mablag\' ajratildi",
-        price: "3 kundan boshlab",
-        description: "Ishlab chiqish",
-        features: "Bepul",
-        description2: "Onlayn karta uchun ariza bering",
-        features2: "Komissiya yo'q",
-        description3: "Arizada 5 million so‘mgacha pul o‘tkazmalari",
-        image: "https://hamkorbank.uz/assets/images-cache/products/humo/humo_preview.37fe5755.webP",
-        BtnCards: true,
-    },
-    {
-        ID: 3,
-        name: "UZCARD",
-        type: "Xarid qilish uchun",
-        currencies: "so‘m miqdorida mablag‘ ajratildi",
-        price: "30 000 so\'m",
-        description: "Karta dizayni",
-        features: "Bepul",
-        description2: "Kartaga texnik xizmat ko'rsatish",
-        features2: "komissiya yo'\q",
-        description3: "Oʻzbekiston boʻylab toʻlov",
-        image: "https://hamkorbank.uz/assets/images-cache/products/physical/uzcard/uzcard_preview.37fe5755.webP",
-        BtnCards: true,
-    },
-    {
-        ID: 4,
-        name: "UZCARD UnionPay",
-        type: "xarid qilish uchun",
-        currencies: ["so‘m miqdorida mablag‘ ajratildi", "USD"],
-        price: "35 000 so\'m",
-        description: "Xizmat va dizayn",
-        features: "Komissiya yo\'q",
-        description2: "Bepul to'lovlar va pul o'tkazmalari",
-        features2: 'Tez tarjimalar',
-        description3: "Biz uni bir daqiqa ichida yuboramiz",
-        image: "https://hamkorbank.uz/assets/images-cache/products/physical/uzcard-unionpay/uzcard_unionpay_preview.37fe5755.webP",
-        BtnCards: true,
-    },
-    {
-        ID: 5,
-        name: "HUMO vizasi",
-        type: "Xarid qilish uchun",
-        currencies: ["so‘m miqdorida mablag‘ ajratildi", "USD"],
-        price: "30 000 so‘m",
-        description: "Xizmat va dizayn",
-        features: "Komissiya yo\'q",
-        description2: "Bepul to'lovlar va pul o'tkazmalari",
-        features2: 'Tez tarjimalar',
-        description3: "Biz uni bir daqiqa ichida yuboramiz",
-        image: "https://hamkorbank.uz/assets/images-cache/products/physical/humo-visa/humo_visa_preview.37fe5755.webP",
-        BtnCards: true,
-    },
-    {
-        ID: 6,
-        name: "UnionPay QuickPass Classic",
-        type: "Sayohat uchun",
-        currencies: "USD",
-        price: "bepul",
-        description: "Xizmat va dizayn",
-        features: "Komissiya yo\'q",
-        description2: "Hamkorbank terminallari orqali naqd pul yechib olish, o‘tkazish va to‘lovlarni amalga oshirish",
-        features2: 'Tez tarjimalar',
-        description3: "Biz uni bir daqiqa ichida yuboramiz",
-        image: "https://hamkorbank.uz/assets/images-cache/products/physical/unionpay/unionpay_preview.37fe5755.webP",
-        BtnCards: false,
-    },
-    {
-        ID: 7,
-        name: "Visa Platinum",
-        type: "Premium",
-        currencies: "USD",
-        price: "120 000 so\'m",
-        description: "Rezidentlar uchun kartani ro'yxatdan o'tkazish va unga xizmat ko'rsatish",
-        features: "Komissiya yo\'q",
-        description2: "Hamkorbank terminallari orqali naqd pul yechib olish, o‘tkazish va to‘lovlarni amalga oshirish",
-        features2: 'Tez tarjimalar',
-        description3: "Biz uni bir daqiqa ichida yuboramiz",
-        image: "https://hamkorbank.uz/assets/images-cache/products/physical/visa-platinum/visa_platinum_preview.37fe5755.webP",
-        BtnCards: true,
-    },
-    {
-        ID: 8,
-        name: "Visa Infinite",
-        type: "Premium",
-        currencies: "USD",
-        price: "200 000 so\'m",
-        description: "Rezidentlar uchun kartani ro'yxatdan o'tkazish va unga xizmat ko'rsatish",
-        features: "Komissiya yo\'q",
-        description2: "Hamkorbank terminallari orqali naqd pul yechib olish, o‘tkazish va to‘lovlarni amalga oshirish",
-        features2: 'Tez tarjimalar',
-        description3: "Biz uni bir daqiqa ichida yuboramiz",
-        image: "https://hamkorbank.uz/assets/images-cache/products/physical/visa-infinite/visa_infinite_preview.37fe5755.webP",
-        BtnCards: true,
-    },
-    {
-        ID: 9,
-        name: "Visa Virtual",
-        type: "Onlayn xarid qilish uchun",
-        currencies: "USD",
-        price: "bepul",
-        description: "Onlayn buyurtma berishda xizmat ko'rsatish va qayta ishlash",
-        features: "Komissiya yo\'q",
-        description2: "5 million so'mgacha bepul to'lovlar va o'tkazmalar",
-        features2: '7 soniya ichida dizayn',
-        description3: "Hamkor ilovasida",
-        image: "https://hamkorbank.uz/assets/images-cache/products/physical/visa-virtual/visa_virtual_preview.37fe5755.webP",
-        BtnCards: true,
-    },
-]
-
-
-
-const root = ReactDOM.create(document.getElementById("root"));
-root.render();
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<Hamkorbank />);
+export default Hamkorbank;
