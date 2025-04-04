@@ -2,19 +2,25 @@ import React from "react";
 import "./main.css"
 
 const MainCards = [
-    { name: "Barchasi", count: 9 },
-    { name: "Xaridlar uchun", count: 4 },
-    { name: "Online xaridlar uchun", count: 1 },
-    { name: "Sayohatlar uchun", count: 2 },
-    { name: "Premium", count: 2 },
+    { name: "Barchasi", count: 38 },
+    { name: "2024-yil", count: 3 },
+    { name: "2023-yil", count: 4 },
+    { name: "2022-yil", count: 4 },
+    { name: "2021-yil", count: 3 },
+    { name: "2020-yil", count: 4 },
+    { name: "2019-yil", count: 4 },
+    { name: "2018-yil", count: 4 },
+    { name: "2017-yil", count: 5 },
+    { name: "2016-yil", count: 6 },
+    { name: "2015-yil", count: 1 },
 ];
 
 const MainCard = () => {
     return (
         <>
             <section className="container">
-                <p className="jis">Jismoniy shaxslar uchun / <span>Debet kartalar</span></p>
-                <h1>Debet kartalari</h1>
+                <p className="jis">Aksiyadorlar va investorlar uchun / <span>Hisobotlar</span></p>
+                <h1>Hisobotlar</h1>
                 <div className="containe">
                     {MainCards.map((category, index) => (
                         <div key={index} className="card2">
@@ -23,7 +29,7 @@ const MainCard = () => {
                         </div>
                     ))}
                 </div>
-                <div className="section3 sectionflex">
+                {/* <div className="section3 sectionflex">
                     <div className="div2">
                         <h3 className="he3">
                             Tovarlar va xizmatlar uchun to'lov
@@ -56,7 +62,7 @@ const MainCard = () => {
                             Komissiyasiz kartaga
                         </p>
                     </div>
-                </div>
+                </div> */}
             </section>
         </>
     )

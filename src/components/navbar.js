@@ -1,14 +1,16 @@
 import React from "react";
 import "./navbar.css";
 
-const navItems = ["Kreditlar", "Kartalar", "Mikroqarzlar", "Omonatlar", "Valyutalar kursi", "Yana"];
+const navItems = ["Muhim faktlar", "Hisobotlar", "Emissiya", "Dividendlar", "Ko'proq"];
 
 const Navbar = () => {
     return (
         <>
             <nav className="navbar container">
                 <div className="flex2">
-                    <a href="#" className="logo">HamkorBank</a>
+                    <a href="#" className="logo">
+                        <img src="https://hamkorbank.uz/assets/images/static/logo.svg" alt="HamKorBank" />
+                    </a>
                     <ul className="nav-links">
                         {navItems.map((item, index) => (
                             <li key={index} className="nav-item">{item}</li>
@@ -17,13 +19,13 @@ const Navbar = () => {
                 </div>
                 <div className="currency">
                     <a href="#" className="flex card">
-                        <p className="p1"><span className="shop2">$</span> 12,860 <span className="shop">Sotib olish</span></p>
+                        <p className="p1"><span className="shop2">$</span> 12,870 <span className="shop">Sotib olish</span></p>
                         <p className="p1">12,970 <span className="shop3">Sotish</span></p>
                     </a>
-                    <button className="internet-bank">Internet-bank</button>
+                    <button className="internet-bank">Internet-banking</button>
                 </div>
             </nav>
-            <hr />
+            <hr/>
         </>
     );
 };

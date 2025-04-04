@@ -1,5 +1,6 @@
 .jis
 {
+    margin-top: 80px;
     line-height: 5;
     color: var(--p-teg-color);
     font-size: 0.9rem;
@@ -58,7 +59,7 @@ h1
 
 h2
 {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 500;
 }
 
@@ -76,7 +77,7 @@ h2
 }
 
 
-.bank-cards-container
+/* .bank-cards-container
 {
     text-align: center;
     padding: 20px;
@@ -134,4 +135,4 @@ h2
     padding-top: 10px;
     color: var(--p-teg-color);
     font-size: 1rem;
-}
+} */

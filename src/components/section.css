@@ -1,4 +1,4 @@
-@import url(../root.css);
+/* @import url(../root.css);
 
 .card-list
 {
@@ -58,4 +58,55 @@
 .img
 {
     height: 250px;
+} */
+.flex3
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card5
+{
+    margin-top: 20px;
+    width: 330px;
+    height: 200px;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+}
+
+.p
+{
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    font-size: 1.5rem;
+}
+
+.p2{
+    position: absolute;
+    top: 70px;
+    left: 20px;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.pdf{
+    position: absolute;
+    top: 158px;
+    left: 20px;
+    font-size: 14px;
+    color: #7C8791;
+}
+
+.button2{
+    position: absolute;
+    right: 23px;
+    bottom: 23px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: none;
+    background: none;
 }

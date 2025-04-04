@@ -14,15 +14,26 @@
 
 .navbar
 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 0;
+    background-color: #f0f2f55c;
+    z-index: 999;
+    backdrop-filter: blur(5px);
 }
 
 hr
 {
+    position: fixed;
+    top: 75px;
+    width: 100%;
     color: var(--p-teg-color);
+    z-index: 999;
 }
 
 .logo
@@ -138,12 +149,13 @@ hr
     background-color: var(--color);
     cursor: pointer;
     color: var(--black-color);
-    font-weight: 600;
+    font-weight: 500;
     font-size: 0.9rem;
     transition: all 0.3s ease-in-out;
 }
 
-.internet-bank:hover{
+.internet-bank:hover
+{
     background-color: var(--universal-hover-color);
     color: var(--text-color);
 }
