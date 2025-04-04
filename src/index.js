@@ -4,7 +4,7 @@ import './input.css';
 import Navbar from "./components/navbar";
 import BankCardLis from "./components/main";
 import BankCardList from "./components/section";
-// import Footer from "";
+import Footer from "./components/footer";
 
 const Hamkorbank = () => {
     return (

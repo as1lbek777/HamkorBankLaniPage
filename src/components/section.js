@@ -141,15 +141,15 @@ const Bank = () => {
                             <h3 className="name1">{card.name}</h3>
                             <div className="flexcard">
                                 <div className="cardPrice">
-                                    <p>{card.price}</p>
+                                    <p className="title1">{card.price}</p>
                                     <p>{card.description}</p>
                                 </div>
-                                <div>
-                                    <p>{card.features}</p>
+                                <div className="cardPrice">
+                                    <p className="title1">{card.features}</p>
                                     <p>{card.description2}</p>
                                 </div>
-                                <div>
-                                    <p>{card.features2}</p>
+                                <div className="cardPrice">
+                                    <p className="title1">{card.features2}</p>
                                     <p>{card.description3}</p>
                                 </div>
                             </div>

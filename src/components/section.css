@@ -6,7 +6,6 @@
     margin-top: 20px;
 }
 
-
 .dsflex
 {
     width: 1320px;
@@ -21,7 +20,7 @@
 
 .type
 {
-    margin-top: -110px;
+    margin-top: -80px;
     margin-bottom: 20px;
     padding: 7px 0;
     text-align: center;
@@ -32,20 +31,28 @@
     font-weight: 500;
 }
 
-.name1{
+.name1
+{
     font-weight: 500;
     font-size: 1.5rem;
     letter-spacing: 0.5px;
     margin-bottom: 15px;
 }
 
-.flexcard{
+.flexcard
+{
     display: flex;
     justify-content: center;
 }
 
-.cardPrice{
+.cardPrice
+{
     width: 200px;
+}
+
+.title1
+{
+    color: black;
 }
 
 .img
