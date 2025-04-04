@@ -4,6 +4,7 @@ import './input.css';
 import Navbar from "./components/navbar";
 import BankCardLis from "./components/main";
 import BankCardList from "./components/section";
+// import Footer from "";
 
 const Hamkorbank = () => {
     return (

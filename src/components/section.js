@@ -6,7 +6,7 @@ const BankCards = [
         ID: 1,
         name: "Visa Classic",
         type: "sayohat uchun",
-        currence: [["USD"], ["EVRO"]],
+        currence: ["USD", "EVRO"],
         price: "bepul",
         description: "Karta dizayni",
         features: "Komissiya yo'q",
@@ -138,9 +138,9 @@ const Bank = () => {
                     <div className="dsflex">
                         <div>
                             <p className="type">{card.type}</p>
-                            <h3>{card.name}</h3>
+                            <h3 className="name1">{card.name}</h3>
                             <div className="flexcard">
-                                <div>
+                                <div className="cardPrice">
                                     <p>{card.price}</p>
                                     <p>{card.description}</p>
                                 </div>
@@ -153,7 +153,7 @@ const Bank = () => {
                                     <p>{card.description3}</p>
                                 </div>
                             </div>
-                            {card.BtnCards && <button>Ko'proq o'qish</button>}
+                            <button>Ko'proq ko'rish</button>
                         </div>
                         <div>
                             <img className="img" src={card.image} alt={card.name} />

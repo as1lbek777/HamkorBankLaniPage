@@ -32,12 +32,23 @@
     font-weight: 500;
 }
 
-.img
-{
-    height: 250px;
+.name1{
+    font-weight: 500;
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
+    margin-bottom: 15px;
 }
 
 .flexcard{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+}
+
+.cardPrice{
+    width: 200px;
+}
+
+.img
+{
+    height: 250px;
 }
