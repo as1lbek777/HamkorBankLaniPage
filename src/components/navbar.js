@@ -6,7 +6,8 @@ const navItems = ["Muhim faktlar", "Hisobotlar", "Emissiya", "Dividendlar", "Ko'
 const Navbar = () => {
     return (
         <>
-            <nav className="navbar container">
+            <div className="navbar" />
+            <nav className="nav container">
                 <div className="flex2">
                     <a href="#" className="logo">
                         <img src="https://hamkorbank.uz/assets/images/static/logo.svg" alt="HamKorBank" />
@@ -24,8 +25,13 @@ const Navbar = () => {
                     </a>
                     <button className="internet-bank">Internet-banking</button>
                 </div>
+                <div className="media">
+                    <span>&#128083;</span>
+                    <span title="Language">&#127760;</span>
+                    <span title="Menu">&#9776;</span>
+                </div>
             </nav>
-            <hr/>
+            <hr />
         </>
     );
 };

@@ -19,12 +19,27 @@
     left: 0;
     right: 0;
     display: flex;
+    height: 75px;
     justify-content: space-between;
     align-items: center;
     padding: 15px 0;
     background-color: #f0f2f55c;
     z-index: 999;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(3px);
+}
+
+.nav
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    background-color: #f0f2f55c;
+    z-index: 1000;
 }
 
 hr
@@ -34,6 +49,7 @@ hr
     width: 100%;
     color: var(--p-teg-color);
     z-index: 999;
+    cursor: none;
 }
 
 .logo
@@ -106,6 +122,7 @@ hr
     width: 160px;
     height: 45px;
     background-color: var(--bg2-color);
+    border-radius: 10px;
 }
 
 .p1
@@ -158,4 +175,36 @@ hr
 {
     background-color: var(--universal-hover-color);
     color: var(--text-color);
+}
+
+.media{
+    display: none;
+}
+
+@media (max-width: 926px)
+{
+    .container
+    {
+        padding: 15px 10px;
+    }
+    .logo{
+        font-size: 1rem;
+    }
+    .nav-links{
+        display: none;
+    }
+    .currency{
+        display: none;
+    }
+    .media{
+        display: block;
+    }
+    .media span{
+        font-size: 1.5rem;
+        letter-spacing: 5px;
+        color: grey;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
 }

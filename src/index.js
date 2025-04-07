@@ -12,6 +12,7 @@ const Hamkorbank = () => {
             <Navbar />
             <BankCardLis />
             <BankCardList />
+            <Footer/>
         </>
     )
 }
